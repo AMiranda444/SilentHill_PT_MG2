@@ -22218,31 +22218,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 16006674778241805, guid: 0e84dce826d10d647bbb12070642241f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.97617346
+      value: 0.71150815
       objectReference: {fileID: 0}
     - target: {fileID: 16006674778241805, guid: 0e84dce826d10d647bbb12070642241f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.14520544
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 16006674778241805, guid: 0e84dce826d10d647bbb12070642241f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.1605029
+      value: -0.70267785
       objectReference: {fileID: 0}
     - target: {fileID: 16006674778241805, guid: 0e84dce826d10d647bbb12070642241f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.015483137
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 16006674778241805, guid: 0e84dce826d10d647bbb12070642241f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -16.766
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 16006674778241805, guid: 0e84dce826d10d647bbb12070642241f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -18.819
+      value: -89.284
       objectReference: {fileID: 0}
     - target: {fileID: 16006674778241805, guid: 0e84dce826d10d647bbb12070642241f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.98
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1128965427460965324, guid: 0e84dce826d10d647bbb12070642241f, type: 3}
       propertyPath: m_Cookie
@@ -22256,9 +22256,17 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6757042922062984883, guid: 0e84dce826d10d647bbb12070642241f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7424902149221691029, guid: 0e84dce826d10d647bbb12070642241f, type: 3}
       propertyPath: detectedLayers.m_Bits
-      value: 4294967295
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156479770267868965, guid: 0e84dce826d10d647bbb12070642241f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8695447671301820859, guid: 0e84dce826d10d647bbb12070642241f, type: 3}
       propertyPath: m_LocalPosition.x
