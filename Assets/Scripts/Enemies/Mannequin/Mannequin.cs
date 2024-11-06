@@ -7,12 +7,9 @@ public class Mannequin : MonoBehaviour
     // Variables publicas
     public NavigationComponent navigation;
     public GazeDetector detector;
-    public Animator animator;
     public AudioSource audioSource;
 
-    public Transform head;
-
-    public float timeToStop, timeToMove, animationSpeed;
+    public float timeToStop, timeToMove;
 
     // Variables privadas
     private bool canMove = false;
@@ -44,14 +41,11 @@ public class Mannequin : MonoBehaviour
         {
             navigation.NavigationState(true);
             navigation.MoveToPosition(Player.Instance.transform.position);
-            head.transform.LookAt(Player.Instance.transform.position);
-            animator.speed = animationSpeed;
             audioSource.volume = 1.0f;
         }
         else
         {
             navigation.NavigationState(false);
-            animator.speed = 0f;
             audioSource.volume = 0f;
         }
     }
@@ -60,7 +54,6 @@ public class Mannequin : MonoBehaviour
     {
         yield return new WaitForSeconds(_time);
         canMove = false;
-        animator.enabled = false;
     }
 
     IEnumerator StartMovementCoroutine(float _time)
@@ -69,7 +62,6 @@ public class Mannequin : MonoBehaviour
         if (!detector.IsRendered())
         {
             canMove = true;
-            animator.enabled = true;
         }
     }
 }

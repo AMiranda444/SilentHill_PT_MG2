@@ -5,7 +5,7 @@ using UnityEngine;
 public class GazeDetector : MonoBehaviour
 {
     // Variables publicas
-    public SkinnedMeshRenderer meshRenderer;
+    public MeshRenderer meshRenderer;
     public Transform point1, point2, point3;
     public bool IsRendered()
     {
