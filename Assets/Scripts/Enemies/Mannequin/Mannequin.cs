@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Mannequin : MonoBehaviour
 {
@@ -9,7 +10,9 @@ public class Mannequin : MonoBehaviour
     public GazeDetector detector;
     public AudioSource audioSource;
 
-    public float timeToStop, timeToMove;
+    public float timeToStop, timeToMove, attackDistance;
+
+    public UnityEvent OnAttack;
 
     // Variables privadas
     private bool canMove = false;
@@ -42,6 +45,11 @@ public class Mannequin : MonoBehaviour
             navigation.NavigationState(true);
             navigation.MoveToPosition(Player.Instance.transform.position);
             audioSource.volume = 1.0f;
+
+            if (Vector3.Distance(transform.position, Player.Instance.transform.position) < attackDistance)
+            {
+                OnAttack.Invoke();
+            }
         }
         else
         {
